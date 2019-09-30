@@ -26,8 +26,12 @@ def open_file(filename):
 	
 def process_file(file, y):
 	for line in file:
-		list = line.split()
-		print(list)
+		#list = line.split()
+		#for elem in list:
+		if line[0].isalpha() and line[1].isalpha():
+			newlist = [line[0]+" "+line[1]]
+		#print(list)
+		print(newlist)
 	
 def print_results():
 	pass
