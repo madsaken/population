@@ -25,7 +25,9 @@ def open_file(filename):
 		print("Filename {} not found!".format(filename))
 	
 def process_file(file, y):
-	
+	for line in file:
+		list = line.split()
+		print(list)
 	
 def print_results():
 	pass
@@ -38,7 +40,7 @@ def main():
 	if file_object:
 		year = read_year()
 		
-		process_file(file_object, year)
+		process_file(file, y)
 		
 		print_results()	
 
