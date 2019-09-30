@@ -40,7 +40,7 @@ def main():
 	if file_object:
 		year = read_year()
 		
-		process_file(file, y)
+		process_file(file_object, year)
 		
 		print_results()	
 
